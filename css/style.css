@@ -1,4 +1,141 @@
 @charset "UTF-8";
+.wrap {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  .wrap h1, .wrap h2 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px; }
+  .wrap p {
+    font-family: "Sawarabi Mincho",sans-serif; }
+
+.block {
+  margin: 60px auto 0;
+  position: relative;
+  height: 600px; }
+  .block img {
+    position: absolute;
+    width: 100%; }
+  .block img:nth-child(1) {
+    top: 0;
+    left: 0;
+    max-width: 600px; }
+  .block img:nth-child(2) {
+    bottom: 0;
+    right: 0;
+    max-width: 500px; }
+
+.header {
+  position: fixed;
+  padding: 8px 0;
+  width: 100%;
+  z-index: 2; }
+  .header__inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    @media (min-width: 768px) {
+      .header__inner {
+        height: 100px; } }
+    .header__inner > div:nth-child(1) {
+      padding: 20px; }
+      .header__inner > div:nth-child(1) img {
+        max-width: 200px;
+        width: 100%;
+        z-index: 2; }
+    .header__inner > div:nth-child(2) {
+      display: flex;
+      align-items: center; }
+      .header__inner > div:nth-child(2) a {
+        font-family: 'Lato', sans-serif;
+        margin: 0 10px;
+        padding: 0 0 10px; }
+      .header__inner > div:nth-child(2) a:hover {
+        text-decoration: underline; }
+  .header__sp-icon {
+    padding: 10px;
+    display: block;
+    text-align: right;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .header__sp-icon {
+        display: none; } }
+    .header__sp-icon p {
+      font-size: 12px; }
+    .header__sp-icon span {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 40px;
+      background-color: #000; }
+      .header__sp-icon span:nth-child(2) {
+        width: 30px; }
+      .header__sp-icon span:nth-child(3) {
+        transform: translateY(8px); }
+      .header__sp-icon span:nth-child(4) {
+        transform: translateY(16px); }
+
+.top {
+  margin: 0 auto;
+  padding: 100px 0 0;
+  text-align: right; }
+  .top img {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .top img {
+        width: 90%; } }
+
+.about {
+  margin: 40px auto 0; }
+  .about p {
+    width: 60%;
+    margin: 0 auto; }
+  .about p + p {
+    margin: 20px auto 0; }
+
+.access {
+  margin: 40px auto 0; }
+  .access iframe {
+    width: 100%; }
+
+.food {
+  margin: 40px auto 0; }
+  .food > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .food > div > div {
+      margin: 0 0 20px; }
+    .food > div > div:nth-child(2) {
+      border: 2px solid #000;
+      padding: 30px; }
+      .food > div > div:nth-child(2) h3 {
+        text-align: center;
+        margin-bottom: 20px; }
+      .food > div > div:nth-child(2) p {
+        text-align: left; }
+
+.drink {
+  margin: 40px auto 0; }
+  .drink > div {
+    display: flex;
+    align-items: center; }
+    .drink > div > div {
+      margin: 0 20px; }
+    .drink > div > div:nth-child(2) {
+      width: 45%;
+      border: 2px solid #000;
+      padding: 30px; }
+      .drink > div > div:nth-child(2) h3 {
+        text-align: center;
+        margin-bottom: 20px; }
+      .drink > div > div:nth-child(2) p {
+        text-align: left; }
+
+.info {
+  margin: 40px auto 0; }
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +144,7 @@
   font-size: 16px; }
 
 body {
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif; }
+  font-family: 'Hiragino Mincho ProN','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3','MS PGothic', arial, helvetica, sans-serif; }
 
 table {
   border-collapse: collapse; }
@@ -16,7 +153,8 @@ ul {
   list-style: none; }
 
 img {
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 100%; }
 
 a {
   text-decoration: none;

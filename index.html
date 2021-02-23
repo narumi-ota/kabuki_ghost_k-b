@@ -3,9 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>おでん</title>
+    <title>和風バースナック</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="header">
+        <div class="header__inner wrap">
+            <div>
+                <img src="images/logo_white.jpg" alt="">
+            </div>
+            <div>
+                <a href="">ABOUT</a>
+                <a href="">FOOD</a>
+                <a href="">DRINK</a>
+                <a href="">INFO</a>
+                <a href="">ACCESS</a>
+            </div>
+            <div class="header__sp-icon">
+                <p>MENU</p>
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="top wrap">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/interior.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/sake_all02.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+
+    <div class="about wrap">
+        <h1>和風スナックバー</h1>
+        <p>和の雰囲気のある、お食事が楽しめるバー</p>
+        <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+    </div>
+
+    <div class="food wrap">
+        <h2>メニュー</h2>
+        <div>
+            <div>
+                <img src="images/menu02.jpg" alt="">
+            </div>
+            <div>
+                <h3>ダミーテキスト</h3>
+                <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="drink wrap">
+        <h2>こだわりのお酒</h2>
+        <div>
+            <div>
+                <img src="images/sake.jpg" alt="">
+            </div>
+            <div>
+                <h3>ダミーテキスト</h3>
+                <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block wrap">
+        <img src="images/menu01.jpg" alt="">
+        <img src="images/mrnagai.jpg" alt="">
+    </div>
+
+    <div class="info wrap">
+        <h2>INFO</h2>
+        <div>
+            <p>営業時間についてのお知らせ</p>
+        </div>
+    </div>
+
+    <div class="access wrap">
+        <h2>ACCESS</h2>
+        <p>〒160-0021&emsp;東京都新宿区歌舞伎町1-3-10 第12金嶋ビル1A</p>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d298.07493974646735!2d139.70348776862775!3d35.69489666261021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd9a83a0659%3A0x40e7a8005f074575!2z44CSMTYwLTAwMjEg5p2x5Lqs6YO95paw5a6_5Yy65q2M6Iie5LyO55S677yR5LiB55uu77yT4oiS77yR77yQIDFB!5e0!3m2!1sja!2sjp!4v1613572591240!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
+    <div class="footer wrap">
+        <a href="">insta</a>
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      effect: 'fade',
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    </script>
 </body>
 </html>
