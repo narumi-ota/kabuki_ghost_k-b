@@ -42,6 +42,9 @@ a:visited {
     .ex-sp {
       display: none; } }
 
+h2 {
+  font-size: 2em; }
+
 .header {
   width: 100%; }
   .header__insta {
@@ -173,21 +176,37 @@ a:visited {
 
 .about {
   margin: 40px auto 0;
-  padding: 0 15px; }
+  padding: 0 15px;
+  text-align: center; }
+  .about p {
+    margin: 20px 0 0; }
+    .about p span {
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px; }
 
 .access {
   margin: 40px auto 0; }
   .access h2, .access p {
-    padding: 0 15px; }
+    padding: 0 15px;
+    text-align: center; }
   .access iframe {
     margin: 20px 0 0;
     width: 100%;
     height: 400px; }
 
 .food {
-  margin: 40px auto 0; }
+  margin: 40px auto 0;
+  background-image: url(../images/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; }
   .food h2 {
-    padding: 0 15px; }
+    text-align: center;
+    padding: 0 15px;
+    color: #fff;
+    padding: 40px 0 20px; }
   .food__block {
     display: flex;
     flex-direction: column; }
@@ -207,6 +226,9 @@ a:visited {
     @media (min-width: 768px) {
       .food__txt {
         width: 50%; } }
+    .food__txt > div {
+      background-color: #fff;
+      padding: 20px; }
     .food__txt span {
       margin: 0 0 10px;
       color: #f39b3e;
@@ -225,4 +247,4 @@ a:visited {
     .food__img > div {
       margin: 0 0 30px; }
     .food__img img {
-      border: 10px solid #867a97; }
+      border: 10px solid #fff; }
