@@ -48,8 +48,11 @@ a:visited {
     position: fixed;
     top: 60px;
     right: 0;
-    padding: 20px;
+    padding: 10px;
     z-index: 3; }
+    @media (min-width: 768px) {
+      .header__insta {
+        padding: 20px; } }
     .header__insta img {
       width: 38px; }
     .header__insta a > img:nth-child(1) {
@@ -64,12 +67,15 @@ a:visited {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 20px;
+    padding: 10px;
     display: block;
-    text-align: right;
+    text-align: center;
     color: #fff;
     z-index: 3;
     cursor: pointer; }
+    @media (min-width: 768px) {
+      .header__icon {
+        padding: 20px; } }
     .header__icon p {
       font-size: 12px; }
     .header__icon span {
@@ -89,7 +95,7 @@ a:visited {
       opacity: 0; }
     .header__icon.close span:nth-child(2) {
       width: 40px;
-      transform: rotate(45deg) translateX(6px) translateY(3px); }
+      transform: rotate(45deg) translateX(5px) translateY(4px); }
     .header__icon.close span:nth-child(3) {
       opacity: 0; }
     .header__icon.close span:nth-child(4) {
@@ -142,33 +148,37 @@ a:visited {
     color: #010424; }
     .top__logo > div {
       background-color: rgba(255, 255, 255, 0.5);
-      padding: 20px; }
+      padding: 10px; }
       @media (min-width: 768px) {
         .top__logo > div {
           padding: 40px; } }
     .top__logo img {
-      width: 100px; }
+      width: 80px; }
       @media (min-width: 768px) {
         .top__logo img {
           width: 200px; } }
     .top__logo h1 {
-      margin: 8px 0 0;
+      margin: 5px 0 0;
       font-size: 1.3em; }
       @media (min-width: 768px) {
         .top__logo h1 {
           margin: 20px 0 0;
           font-size: 2em; } }
     .top__logo p {
-      margin: 10px 0 0; }
+      margin: 5px 0 0; }
       @media (min-width: 768px) {
         .top__logo p {
+          margin: 10px 0 0;
           font-size: 1.2em; } }
 
 .about {
-  margin: 40px auto 0; }
+  margin: 40px auto 0;
+  padding: 0 15px; }
 
 .access {
   margin: 40px auto 0; }
+  .access h2, .access p {
+    padding: 0 15px; }
   .access iframe {
     margin: 20px 0 0;
     width: 100%;
@@ -176,6 +186,8 @@ a:visited {
 
 .food {
   margin: 40px auto 0; }
+  .food h2 {
+    padding: 0 15px; }
   .food__block {
     display: flex;
     flex-direction: column; }
