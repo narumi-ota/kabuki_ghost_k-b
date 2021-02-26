@@ -188,7 +188,8 @@ h2 {
   text-align: center;
   color: #010424; }
   .about p {
-    margin: 20px 0 0; }
+    margin: 20px 0 0;
+    line-height: 2; }
     .about p span {
       font-weight: bold;
       font-family: 'Lato', sans-serif;
@@ -199,7 +200,8 @@ h2 {
   color: #010424; }
   .access h2, .access p {
     padding: 0 15px;
-    text-align: center; }
+    text-align: center;
+    line-height: 2; }
   .access iframe {
     margin: 20px 0 0;
     width: 100%;
