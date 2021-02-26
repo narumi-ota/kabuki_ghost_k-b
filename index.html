@@ -253,9 +253,9 @@
             $(window).on('scroll',function(){
                 var mvheight = $('.top').height();
                 var photoheight = $('.food').offset().top;
+                var photo = $('.food').height();
+                var photoend = photoheight + photo;
                 var top = $(window).scrollTop();
-
-                console.log(top,photoheight)
 
                 if(top <= mvheight){
                     $('.header__icon').removeClass('navy');
@@ -263,9 +263,12 @@
                 } else if(top >= mvheight && top <= photoheight){
                     $('.header__icon').addClass('navy');
                     $('.header__insta').addClass('navy');
-                } else if (top >= mvheight && top >= photoheight) {
+                } else if (top >= mvheight && top >= photoheight && top <= photoend) {
                     $('.header__icon').removeClass('navy');
                     $('.header__insta').removeClass('navy');
+                } else {
+                    $('.header__icon').addClass('navy');
+                    $('.header__insta').addClass('navy');
                 }
             });
         });

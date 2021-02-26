@@ -247,9 +247,9 @@ h2 {
       background-color: rgba(255, 255, 255, 0.8);
       padding: 20px; }
     .food__txt span {
-      margin: 0 0 10px;
       color: #f39b3e;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 1.2em; }
       @media (min-width: 768px) {
         .food__txt span {
           font-size: 1.5em; } }
