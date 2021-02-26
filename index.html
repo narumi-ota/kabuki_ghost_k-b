@@ -246,17 +246,20 @@
         $(function(){
             $(window).on('scroll',function(){
                 var mvheight = $('.top').height();
-                var photoheight = $('.food').height();
+                var photoheight = $('.food').offset().top;
+                var top = $(window).scrollTop();
 
-                console.log(photoheight)
+                console.log(top,photoheight)
 
-                if($(window).scrollTop() <= mvheight){
+                if(top <= mvheight){
                     $('.header__icon').removeClass('navy');
                     $('.header__insta').removeClass('navy');
-                }
-                if($(window).scrollTop() >= mvheight){
+                } else if(top >= mvheight && top <= photoheight){
                     $('.header__icon').addClass('navy');
                     $('.header__insta').addClass('navy');
+                } else if (top >= mvheight && top >= photoheight) {
+                    $('.header__icon').removeClass('navy');
+                    $('.header__insta').removeClass('navy');
                 }
             });
         });
