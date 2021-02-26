@@ -45,6 +45,14 @@ a:visited {
 h2 {
   font-size: 2em; }
 
+.move {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .8s ease; }
+  .move.show {
+    opacity: 1;
+    transform: translateY(0); }
+
 .header {
   width: 100%; }
   .header__insta {
@@ -177,7 +185,8 @@ h2 {
 .about {
   margin: 40px auto 0;
   padding: 0 15px;
-  text-align: center; }
+  text-align: center;
+  color: #010424; }
   .about p {
     margin: 20px 0 0; }
     .about p span {
@@ -186,7 +195,8 @@ h2 {
       font-size: 20px; }
 
 .access {
-  margin: 40px auto 0; }
+  margin: 40px auto 0;
+  color: #010424; }
   .access h2, .access p {
     padding: 0 15px;
     text-align: center; }
@@ -212,7 +222,8 @@ h2 {
     flex-direction: column; }
     @media (min-width: 768px) {
       .food__block {
-        flex-direction: row; } }
+        flex-direction: row;
+        align-items: center; } }
     .food__block.sp-reverse {
       flex-direction: column-reverse; }
       @media (min-width: 768px) {
@@ -220,14 +231,18 @@ h2 {
           flex-direction: row; } }
   .food__txt {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 50px;
+    margin: 0 0 30px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    color: #010424; }
     @media (min-width: 768px) {
       .food__txt {
-        width: 50%; } }
+        padding: 0 15px;
+        width: 50%;
+        margin: 0; } }
     .food__txt > div {
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.8);
       padding: 20px; }
     .food__txt span {
       margin: 0 0 10px;
@@ -238,13 +253,20 @@ h2 {
           font-size: 1.5em; } }
   .food__img {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 50px;
     display: flex;
     flex-direction: column; }
     @media (min-width: 768px) {
       .food__img {
-        width: 50%; } }
+        width: 50%;
+        padding: 0 15px; } }
     .food__img > div {
       margin: 0 0 30px; }
     .food__img img {
       border: 10px solid #fff; }
+  .food table {
+    width: 100%;
+    text-align: left;
+    margin: 20px 0 0; }
+    .food table th {
+      width: 200px; }

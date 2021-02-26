@@ -69,39 +69,134 @@
         <div class="wrap">        
             <h2>Food&Drink</h2>
             <div class="food__block">
-                <div class="food__txt">
+                <div class="food__txt move">
                     <div>
                         <span>ODEN</span>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
+                        <table>
+                            <tr>
+                                <th><p>厚揚げ</p></th>
+                                <td><p>¥300</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>ちくわ</p></th>
+                                <td><p>¥250</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>さつまあげ</p></th>
+                                <td><p>¥300</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>こんにゃく</p></th>
+                                <td><p>¥250</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>たまご</p></th>
+                                <td><p>¥250</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>ソーセージ</p></th>
+                                <td><p>¥300</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>こんぶ(2個入)</p></th>
+                                <td><p>¥200</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>はんぺん</p></th>
+                                <td><p>¥250</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>ちくわぶ</p></th>
+                                <td><p>¥250</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>もち巾着</p></th>
+                                <td><p>¥300</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>おまかせ5点盛り</p></th>
+                                <td><p>¥1000</p></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <span>YAKIIMO</span>
+                        <table>
+                            <tr>
+                                <th><p>焼き芋(Mサイズ)</p></th>
+                                <td><p>¥500</p></td>
+                            </tr>
+                        </table>
+                        <p>100日間熟成させた紅はるか</p>
                     </div>
                 </div>
                 <div class="food__img">
                     <div>
-                        <img src="images/menu01.jpg" alt="">
+                        <img src="images/menu01.jpg" alt="" class="move">
                     </div>
                     <div>
-                        <img src="images/mrnagai.jpg" alt="">
+                        <img src="images/mrnagai.jpg" alt="" class="move">
                     </div>
                 </div>
             </div>
             <div class="food__block sp-reverse">
                 <div class="food__img">
                     <div>
-                        <img src="images/sake.jpg" alt="">
+                        <img src="images/sake.jpg" alt="" class="move">
                     </div>
                 </div>
-                <div class="food__txt">
+                <div class="food__txt move">
                     <div>
                         <span>DRINK</span>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
-                        <p>ダミダミ</p>
+                        <table>
+                            <tr>
+                                <th><p>KIRIN 一番絞り</p></th>
+                                <td><p>¥800</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>クラフトビール396</p></th>
+                                <td><p>¥1000</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>ハイボール</p></th>
+                                <td><p>¥700</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>レモンサワー</p></th>
+                                <td><p>¥700</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>緑茶・烏龍ハイ</p></th>
+                                <td><p>¥700</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>赤霧島(芋焼酎)</p></th>
+                                <td><p>¥800</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>伊七部(芋焼酎)</p></th>
+                                <td><p>¥1200</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>日本酒(桃川)冷・温</p></th>
+                                <td><p>¥700</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>日本酒(加茂泉)冷・温</p></th>
+                                <td><p>¥700</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>梅酒・桃酒・りんご酒</p></th>
+                                <td><p>¥700</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>テキーラショット</p></th>
+                                <td><p>¥800</p></td>
+                            </tr>
+                            <tr>
+                                <th><p>ソフトドリンク各種</p></th>
+                                <td><p>¥350</p></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -151,7 +246,10 @@
         $(function(){
             $(window).on('scroll',function(){
                 var mvheight = $('.top').height();
-                console.log(mvheight)
+                var photoheight = $('.food').height();
+
+                console.log(photoheight)
+
                 if($(window).scrollTop() <= mvheight){
                     $('.header__icon').removeClass('navy');
                     $('.header__insta').removeClass('navy');
@@ -188,6 +286,26 @@
                     target1.css('background-position','center top');
                 }
             });
+        });
+
+        $(function(){
+            $(window).on('scroll',function(event){
+
+                var scroll_top = $(window).scrollTop();
+                var window_height = $(window).height();
+                var moves = $('.move');
+
+                moves.each(function(index,dom){
+                    var d = $(dom);
+                    var offset_top = d.offset().top;
+                    var item_show = (scroll_top + window_height) - offset_top;
+                
+                    if( item_show > 200 ){
+                            d.addClass('show');
+                    }
+                });
+
+            }).triggerHandler('scroll');
         });
     </script>
 </body>
